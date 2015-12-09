@@ -15,8 +15,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
-    res.render('index', {date : (new Date().toDateString())});
+    var today = new Date();
+    res.render('index', {date : (today.toDateString()),
+                        tZone : today.getTimezoneOffset()});
 })
-
 
 app.listen(3000);
