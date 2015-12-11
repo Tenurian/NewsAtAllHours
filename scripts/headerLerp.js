@@ -1,4 +1,5 @@
 var c = document.getElementById("headerCanvas");
 var ctx = c.getContext("2d");
-var sunImg = src = "Images/sun.png";
-ctx.drawImage(sunImg, 10, 10);
+var sunImg = document.getElementById("sun");
+
+ctx.drawImage(sunImg, 8, 0, 100, 100);
