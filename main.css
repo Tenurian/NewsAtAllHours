@@ -15,7 +15,7 @@ body {
 .container {
     text-align: center;
     width: 1536px;
-    height: auto;
+    height: 800px;
     background-color: #6a6a6a;
     margin-left: auto;
     margin-right: auto;
@@ -23,8 +23,12 @@ body {
     border-radius: 10px;
 }
 
+.side{
+    border: 1px solid red;
+    height: 795px;
+}
+
 section {
-    width: 80%;
     margin: 0 auto;
     background-color: #FFF;
     border-radius: 10px;
@@ -32,7 +36,7 @@ section {
 
 .daybox {
     display: inline-block;
-    margin: 0 5%;
+    margin: 0 0;
 }
 
 header {
@@ -43,4 +47,14 @@ header {
     width: 1919px;
     height: 100px;
     background-color: #FFF;
+}
+
+#left {
+    float: left;
+    width: 59%;
+}
+
+#right {
+    float: right;
+    width: 39%;
 }
