@@ -1,0 +1,5 @@
+-Search bar that would add stocks to the ticker
+-Sun and moon moving on header(with lerp would be a feature)
+-Sport area with win/lose record and search diffrent teams (maybe team records or player records) 
+-Search location and persist info
+-Tabs for mutipule RSS feads
