@@ -10,9 +10,12 @@ function moveSun(newNum, hour) {
     if (hour > 5 && hour < 17) {
         ctx.clearRect(0, 0, c.width, c.height);
         ctx.drawImage(sunImg, newNum, 5, 100, 100);
+        c.style.backgroundImage = "url('Images/daySky2.jpg')";
     } else {
         ctx.clearRect(0, 0, c.width, c.height);
         ctx.drawImage(moonImg, newNum, 5, 100, 100);
+        c.style.backgroundImage = "url('Images/night.jpg')";
+
     }
 }
 
@@ -27,7 +30,7 @@ interval = setInterval(function () {
     var interpolateMinutes = (minutes / 60);
     var interpolateSeconds = (seconds / 3600);
 
-//    console.log(interpolateHour + ", " + interpolateMinutes + ", " + interpolateSeconds);
+    //    console.log(interpolateHour + ", " + interpolateMinutes + ", " + interpolateSeconds);
 
     var num = getTween(0, width, interpolateHour);
     num += getTween(0, width, interpolateMinutes);
