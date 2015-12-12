@@ -10,7 +10,7 @@ function moveSun(newNum, hour) {
     if (hour > 5 && hour < 17) {
         ctx.clearRect(0, 0, c.width, c.height);
         ctx.drawImage(sunImg, newNum, 5, 100, 100);
-        c.style.backgroundImage = "url('Images/daySky2.jpg')";
+        c.style.backgroundImage = "url('Images/skys.jpg')";
     } else {
         ctx.clearRect(0, 0, c.width, c.height);
         ctx.drawImage(moonImg, newNum, 5, 100, 100);
