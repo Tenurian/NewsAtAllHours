@@ -27,7 +27,7 @@ interval = setInterval(function () {
     var interpolateMinutes = (minutes / 60);
     var interpolateSeconds = (seconds / 3600);
 
-    console.log(interpolateHour + ", " + interpolateMinutes + ", " + interpolateSeconds);
+//    console.log(interpolateHour + ", " + interpolateMinutes + ", " + interpolateSeconds);
 
     var num = getTween(0, width, interpolateHour);
     num += getTween(0, width, interpolateMinutes);
