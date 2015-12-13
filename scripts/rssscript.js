@@ -18,13 +18,13 @@ $.ajax({
             var continent = "";
 
             $.each(data.responseData.feed.entries, function (i, e) {
-                console.log("------------------------");
-                console.log("title      : " + e.title);
-                console.log("link       : " + e.link);
-                console.log("image      : " + e.image);
-                console.log("author     : " + e.author);
-                console.log("content    : " + e.content);
-                console.log("description: " + e.description);
+//                console.log("------------------------");
+//                console.log("title      : " + e.title);
+//                console.log("link       : " + e.link);
+//                console.log("image      : " + e.image);
+//                console.log("author     : " + e.author);
+//                console.log("content    : " + e.content);
+//                console.log("description: " + e.description);
 
 
                 continent += "<div>";
@@ -43,6 +43,4 @@ $.ajax({
             });
         }
     }
-
-
 });

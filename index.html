@@ -4,10 +4,7 @@
     <title>Titular</title>
     <link type="text/css" rel="stylesheet" href="main.css" />
 
-
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" />
-
-
 
 </head>
 
@@ -17,7 +14,6 @@
         <img id="sun" src="Images/sun.png" height="50" width="50">
         <img id="moon" src="Images/moon.png" height="50" width="50">
     </header>
-
     <br>
     <br>
     <br>
@@ -29,8 +25,8 @@
     <div class="container">
         <div id="left" class="side">
             <section id=weatherPanel>
-                <h3 id='location'></h3>
-                <div>
+                <div id="weatherData">
+                    <h3 id='location'></h3>
                     <div class="daybox" id="day1">
                         <p class="date"></p>
                         <div class="image"></div>
@@ -56,14 +52,15 @@
                         <div class="image"></div>
                         <div class="info"></div>
                     </div>
+                    <input id="locationfield" type="text" size="25" placeholder="Enter City & State/Country" onkeypress="if(event.keyCode == 13) return locupdate()" />
                 </div>
             </section>
             <h1></h1>
-            <section>
+            <section id="rssPanel">
                 <!--                <h1>filler</h1>-->
 
                 <div id="carousel">
-<!--
+                    <!--
                     <div><p>1</p></div>
                     <div><p>2</p></div>
                     <div><p>3</p></div>
@@ -77,27 +74,23 @@
 
         <div id="right" class="side">
             <section>
-                <h1>filler</h1>
             </section>
         </div>
     </div>
 
     <footer>
-        <!--        <p>Stuff</p>-->
-
+        <h2 id="ticker"></h2>
     </footer>
 
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-
-
+    
     <script src="scripts/weatherscript.js"></script>
     <script src="scripts/rssscript.js"></script>
     <script src="scripts/headerLerp.js"></script>
-
+    <script src="scripts/ticker.js" ></script>
 </body>
 
 </html>
