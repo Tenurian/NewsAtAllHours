@@ -8,7 +8,7 @@ var viewableContent = "",
 
 $.getJSON(FEED_URL, function (data) {
     console.log(data);
-    var i, x, seperator = "///";
+    var i, x, seperator = ">|<";
 
     for (x = 0; x < 5; x++) {
         seperator = "_" + seperator + "_";

@@ -74,6 +74,14 @@
 
         <div id="right" class="side">
             <section>
+
+                <h1 id="date"></h1>
+                <script>
+                    setInterval(function () {
+                        document.getElementById("date").innerHTML = new Date();
+                    }, 1);
+                </script>
+
             </section>
         </div>
     </div>
@@ -86,11 +94,11 @@
 
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-    
+
     <script src="scripts/weatherscript.js"></script>
     <script src="scripts/rssscript.js"></script>
     <script src="scripts/headerLerp.js"></script>
-    <script src="scripts/ticker.js" ></script>
+    <script src="scripts/ticker.js"></script>
 </body>
 
 </html>
