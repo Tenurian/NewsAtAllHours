@@ -111,7 +111,7 @@ canvas {
 
 #right section {
     height: 100%;
-    background-color: rgba(166, 210, 255);
+    background-color: rgba(166, 210, 255, 0.8);
 }
 
 #right h3 {
