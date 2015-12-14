@@ -75,10 +75,13 @@
         <div id="right" class="side">
             <section>
 
-                <h3 id="date"></h3>
+                <h3 id="date1"></h3>
+                <h3 id="date2"></h3>
                 <script>
                     setInterval(function () {
-                        document.getElementById("date").innerHTML = new Date();
+                        var d = new Date();
+                        document.getElementById("date1").innerHTML = d;
+                        document.getElementById("date2").innerHTML = new Date(d.getTime() - ((1000 * 60 * 60)*2));
                     }, 1);
                 </script>
 
