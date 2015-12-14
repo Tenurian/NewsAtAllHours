@@ -27,7 +27,7 @@ $.ajax({
 //                console.log("description: " + e.description);
 
 
-                continent += "<div>";
+                continent += "<div class='paper'>";
                 continent += "<a href='" + e.link + "' target='_blank'><h1>" + e.title + "</h1></a>";
                 continent += "<br><p>" + e.content + "</p>";
                 continent += "</div>";

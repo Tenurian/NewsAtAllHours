@@ -76,9 +76,22 @@ header {
     background-color: #FFF;
 }
 
+header {
+    background-color: #6a6a6a;
+}
+
+canvas{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+/*    width: 1500px;*/
+}
+
 #left {
     float: left;
-    width: 59%;
+    width: 59.5%;
     position: relative;
 }
 
@@ -94,7 +107,7 @@ header {
 
 #right {
     float: right;
-    width: 39%;
+    width: 39.5%;
 }
 
 #right section {
@@ -104,6 +117,11 @@ header {
 #right h1 {
     margin: 0;
     padding: 10px;
+}
+
+.paper {
+    background-image: url("http://www.unsigneddesign.com/Seamless_background_textures/1200px/seamlesstexture19_1200.jpg");
+    border-radius: 10px;
 }
 
 footer {
