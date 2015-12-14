@@ -38,7 +38,7 @@ section {
     margin: 0 2.5px;
 }
 
-#weatherData h3{
+#weatherData h3 {
     margin: 0;
     padding: 0;
 }
@@ -47,15 +47,14 @@ section {
     margin-bottom: 5px;
 }
 
-#weatherData{
+#weatherData {
     position: absolute;
     top: 6px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: rgba(166, 210, 255, 0.8);
+    background-color: rgba(166, 210, 255);
     margin: 0 auto;
     width: 75%;
-    
     border-radius: 3px;
     border: 2px solid black;
 }
@@ -80,13 +79,13 @@ header {
     background-color: #6a6a6a;
 }
 
-canvas{
+canvas {
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
     display: block;
-/*    width: 1500px;*/
+    /*    width: 1500px;*/
 }
 
 #left {
@@ -112,6 +111,7 @@ canvas{
 
 #right section {
     height: 100%;
+    background-color: rgba(166, 210, 255, 0.8);
 }
 
 #right h1 {
@@ -133,7 +133,7 @@ footer {
     background-color: white;
 }
 
-#ticker{
+#ticker {
     font-family: monospace;
     font-size: 2em;
 }
