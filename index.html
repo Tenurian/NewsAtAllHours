@@ -77,18 +77,20 @@
 
                 <h3 id="date1"></h3>
                 <h3 id="date2"></h3>
-                <script>
-                    setInterval(function () {
-                        var d = new Date();
-                        document.getElementById("date1").innerHTML = d;
-                        document.getElementById("date2").innerHTML = new Date(d.getTime() - ((1000 * 60 * 60) * 2));
-                        document.getElementById("date2").innerHTML = new Date().setDate;
-                        //                        var d = new Date();
-                        //                        document.getElementById("date1").innerHTML = d;
-                        //                        document.getElementById("date2").innerHTML = new Date(d.getTime() - ((1000 * 60 * 60)*2));
-                        //                        document.getElementById("date2").innerHTML = new Date().setDate;
-                    }, 1);
-                </script>
+                <!--
+            <script>
+    setInterval(function () {
+        var d = new Date();
+        document.getElementById("date1").innerHTML = d;
+        document.getElementById("date2").innerHTML = new Date(d.getTime() - ((1000 * 60 * 60) * 2));
+        document.getElementById("date2").innerHTML = new Date().setDate;
+        //                        var d = new Date();
+        //                        document.getElementById("date1").innerHTML = d;
+        //                        document.getElementById("date2").innerHTML = new Date(d.getTime() - ((1000 * 60 * 60)*2));
+        //                        document.getElementById("date2").innerHTML = new Date().setDate;
+    }, 1);
+</script>
+-->
 
             </section>
         </div>
@@ -102,11 +104,12 @@
 
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-
+    <script src="scripts/timeZone.js"></script>
     <script src="scripts/weatherscript.js"></script>
     <script src="scripts/rssscript.js"></script>
     <script src="scripts/headerLerp.js"></script>
     <script src="scripts/ticker.js"></script>
+
 </body>
 
 </html>
