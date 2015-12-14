@@ -15,17 +15,17 @@ function getTimeZones() {
 
     hawaiianTimeZone = "Hawaii-Aleutian: " + (d.getHours() - 3) + ":" + d.getMinutes() + ":" + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-    alaskanTimeZone = "Alaska: " + (d.getHours() - 2) + ": " + d.getMinutes() + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+    alaskanTimeZone = "Alaska: " + (d.getHours() - 2) + ": " + d.getMinutes() + ":" + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-    pacificTimeZone = "Pacific: " + (d.getHours() - 1) + ": " + d.getMinutes() + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+    pacificTimeZone = "Pacific: " + (d.getHours() - 1) + ": " + d.getMinutes() + ":" + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-    mountainTimeZone = "Mountain: " + d.getHours() + ": " + d.getMinutes() + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+    mountainTimeZone = "Mountain: " + d.getHours() + ": " + d.getMinutes() + ":" + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-    centralTimeZone = "Central: " + (d.getHours() + 1) + ": " + d.getMinutes() + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+    centralTimeZone = "Central: " + (d.getHours() + 1) + ": " + d.getMinutes() + ":" + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-    easternTimeZone = "Eastern: " + (d.getHours() + 2) + ": " + d.getMinutes() + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+    easternTimeZone = "Eastern: " + (d.getHours() + 2) + ": " + d.getMinutes() + ":" + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-    dateArea.innerHTML = hawaiianTimeZone;
+    dateArea.innerHTML = hawaiianTimeZone + "<br>" + alaskanTimeZone + "<br>" + pacificTimeZone + "<br>" + mountainTimeZone + "<br>" + centralTimeZone + "<br>" + easternTimeZone;;
 }
 
 
