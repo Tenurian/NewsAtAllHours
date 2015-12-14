@@ -38,6 +38,20 @@ section {
     margin: 0 2.5px;
 }
 
+#logo {
+    position: absolute;
+    top: 33;
+    left: 25;
+    margin-right: auto;
+}
+
+#logo2 {
+    position: absolute;
+    top: 33;
+    right: 25;
+    margin-right: auto;
+}
+
 #weatherData h3 {
     margin: 0;
     padding: 0;
@@ -72,10 +86,6 @@ header {
     padding-top: 0px;
     width: 1919px;
     height: 117px;
-    background-color: #FFF;
-}
-
-header {
     background-color: #6a6a6a;
 }
 
@@ -130,7 +140,7 @@ footer {
     bottom: 0;
     left: 0;
     height: 75px;
-    width: 100%;
+    width: 1920px;
     background-color: white;
 }
 
