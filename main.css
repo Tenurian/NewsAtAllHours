@@ -101,6 +101,7 @@ canvas {
 #rssPanel {
     position: absolute;
     bottom: 0;
+    border-radius: 10px;
     width: 100%;
 }
 
