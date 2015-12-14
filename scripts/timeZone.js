@@ -7,23 +7,26 @@ var alaskanTimeZone = 0;
 var hawaiianTimeZone = 0;
 
 var dateArea = document.getElementById("date1");
-
-setInterval(getTimeZones, 1);
-//d.toLocaleTimeString
+var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var day = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
 
 function getTimeZones() {
+    d = new Date();
 
-    hawaiianTimeZone = "Hawaii-Aleutian: " + (d.getHours() - 3) + ":" + d.getMinutes() + ":" + d.getSeconds() + "  " + d.getDay() + ", " + d.getMonth() + " " + d.getDay() + ", " + d.getFullYear();
+    hawaiianTimeZone = "Hawaii-Aleutian: " + (d.getHours() - 3) + ":" + d.getMinutes() + ":" + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-    alaskanTimeZone = "Alaska: " + (d.getHours() - 2) + ": " + d.getMinutes() + d.getSeconds() + "  " + d.getDay() + ", " + d.getMonth() + " " + d.getDay() + ", " + d.getFullYear();
+    alaskanTimeZone = "Alaska: " + (d.getHours() - 2) + ": " + d.getMinutes() + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-    pacificTimeZone = "Pacific: " + (d.getHours() - 1) + ": " + d.getMinutes() + d.getSeconds() + "  " + d.getDay() + ", " + d.getMonth() + " " + d.getDay() + ", " + d.getFullYear();
+    pacificTimeZone = "Pacific: " + (d.getHours() - 1) + ": " + d.getMinutes() + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-    mountainTimeZoneTimeZone = "Mountain: " + d.getHours() + ": " + d.getMinutes() + d.getSeconds() + "  " + d.getDay() + ", " + d.getMonth() + " " + d.getDay() + ", " + d.getFullYear();
+    mountainTimeZone = "Mountain: " + d.getHours() + ": " + d.getMinutes() + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-    centralTimeZoneTimeZone = "Central: " + (d.getHours() + 1) + ": " + d.getMinutes() + d.getSeconds() + "  " + d.getDay() + ", " + d.getMonth() + " " + d.getDay() + ", " + d.getFullYear();
+    centralTimeZone = "Central: " + (d.getHours() + 1) + ": " + d.getMinutes() + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
-    easternTimeZone = "Eastern: " + (d.getHours() + 2) + ": " + d.getMinutes() + d.getSeconds() + "  " + d.getDay() + ", " + d.getMonth() + " " + d.getDay() + ", " + d.getFullYear();
+    easternTimeZone = "Eastern: " + (d.getHours() + 2) + ": " + d.getMinutes() + d.getSeconds() + "  " + day[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
 
     dateArea.innerHTML = hawaiianTimeZone;
 }
+
+
+setInterval(getTimeZones, 1);
