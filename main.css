@@ -52,7 +52,7 @@ section {
     top: 6px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: rgba(166, 210, 255);
+    background-color: rgba(166, 210, 255, 0.8);
     margin: 0 auto;
     width: 75%;
     border-radius: 3px;
@@ -111,7 +111,7 @@ canvas {
 
 #right section {
     height: 100%;
-    background-color: rgba(166, 210, 255, 0.8);
+    background-color: rgba(166, 210, 255);
 }
 
 #right h3 {
