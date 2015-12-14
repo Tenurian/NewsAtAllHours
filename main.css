@@ -1,5 +1,10 @@
+*{
+    font-family: 'Open Sans', serif;
+}
+
 html {
     background-color: #142044;
+    overflow: hidden;
 }
 
 body {
@@ -68,9 +73,14 @@ section {
     transform: translate(-50%, 0);
     background-color: rgba(166, 210, 255, 0.8);
     margin: 0 auto;
-    width: 75%;
+    width: 80%;
     border-radius: 3px;
     border: 2px solid black;
+}
+
+#weatherData .daybox .info * {
+    margin: 10 0;
+    padding: 0;
 }
 
 #weatherPanel {
@@ -146,7 +156,7 @@ footer {
 
 #ticker {
     font-family: monospace;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .whiteout {
