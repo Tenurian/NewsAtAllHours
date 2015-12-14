@@ -145,6 +145,11 @@ canvas {
     border-radius: 10px;
 }
 
+.paper h3 {
+    padding: 0;
+    margin: 0;
+}
+
 footer {
     position: absolute;
     bottom: 0;

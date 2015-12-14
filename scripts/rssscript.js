@@ -29,7 +29,7 @@ $.ajax({
 
                 continent += "<div class='paper'>";
                 continent += "<a href='" + e.link + "' target='_blank'><h1>" + e.title + "</h1></a>";
-                continent += "<br><p>" + e.content + "</p>";
+                continent += "<p>" + e.content + "</p>";
                 continent += "</div>";
                 CNN_Tech_feed.push(new RSSItem(e.title, e.author, e.content, e.description));
             });
